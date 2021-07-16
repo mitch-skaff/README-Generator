@@ -38,7 +38,7 @@ function renderLicenseLink(license) {
     case "None":
       return;
   }
-}
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -52,41 +52,42 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} 
-          ${renderLicenseBadge(data.license)}
+  return `
+  # ${data.title} 
+  
+  ${renderLicenseBadge(data.license)}
 
-          ## Demo
-          ![demo]()
+  ## Demo
+  ![demo]()
 
-          ## Table of Contents
-          * [Description](#Description)
-          * [Installation](#Installation)
-          * [License](#License)
-          * [Usage](#Usage)
-          * [Tests](#Tests)
-          * [Contributing](#Contributing)
-          * [Questions](#Questions)
+  ## Table of Contents
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [License](#License)
+  * [Usage](#Usage)
+  * [Tests](#Tests)
+  * [Contributing](#Contributing)
+  * [Questions](#Questions)
           
-          ## Description
-          ${data.describe}
+  ## Description
+  ${data.describe}
 
-          ## Installation
-          ${data.install}
+  ## Installation
+  ${data.install}
 
-          ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)}
 
-          ## Usage
-          ${data.usage}
+  ## Usage
+  ${data.usage}
 
-          ## Tests
-          ${data.test}
+  ## Tests
+  ${data.test}
 
-          ## Contributing
-          ${data.contribute}
+  ## Contributing
+  ${data.contribute}
 
-          ## Questions
-          For any further questions regarding this project please contact me through either my GitHub, https://github.com/${data.github}, or my email, ${data.email}!
-`;
+  ## Questions
+  For any further questions regarding this project please contact me through either my GitHub, https://github.com/${data.github}, or my email, ${data.email}!`;
 };
 
 module.exports = generateMarkdown;
