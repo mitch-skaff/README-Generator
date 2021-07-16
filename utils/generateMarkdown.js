@@ -58,7 +58,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Demo
-  ![demo]()
+  ![demo](../demo.gif)
 
   ## Table of Contents
   * [Description](#Description)
