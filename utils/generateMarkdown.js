@@ -58,7 +58,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Demo
-  ![demo](../demo.gif)
+  ![demo](https://github.com/mitch-skaff/README-Generator/blob/main/demo.gif)
 
   ## Table of Contents
   * [Description](#Description)
